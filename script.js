@@ -1,5 +1,5 @@
 function showtemp(search) {
-  let temperature = Math.round(search.data.main.temp);
+  let temperature = search.data.main.temp;
   let content = document.querySelector("p");
   console.log(content);
   content.innerHTML = `Current temperature is ${temperature}°C`;
