@@ -2,14 +2,7 @@ h1 {
   margin-top: 20px;
   line-height: 50px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-}
-
-.footnote {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-right: 30px;
-  text-align: center;
-  line-height: 20px;
+  font-weight: 200;
 }
 
 .search-bar {
@@ -17,16 +10,21 @@ h1 {
   margin-bottom: 30px;
   padding: 20px;
 }
+  .footnote {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 20px;
+}
 
 p {
   line-height: 30px;
   right: 10px;
-  padding: 10px;
 }
-
 .sun {
   max-width: 40px;
   display: inline-block;
+  padding: 10px;
 }
 
 .container {
@@ -36,5 +34,10 @@ p {
   margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: auto;
+  margin-right: auto;
+}
+
+content. {
+  colour: rgb(112, 117, 122);
   margin-right: auto;
 }
