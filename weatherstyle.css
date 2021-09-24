@@ -46,3 +46,7 @@ p {
 .col-5 {
   padding-top: 75px;
 }
+
+#Weather-description {
+  text-transform: capitalize;
+}
