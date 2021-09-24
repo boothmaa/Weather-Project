@@ -14,41 +14,45 @@
 <body>
 <div class=container>
         <form class="search-form" id="search-form">
-                <div class="row">
-                  <div class="col-9">
-                    <input
+         <div class="row">
+          <div class="col-9">
+            <input
                       type="search"
                       placeholder="Type a city.."
                       autofocus="on"
                       autocomplete="off"
                       id="city-input"
                       class="form-control shadow-sm"
-                    />
-                  </div>
-                  <div class="col-3">
-                    <input
+             />
+          </div>
+          <div class="col-3">
+            <input
                       type="submit"
                       value="Search"
                       class="form-control btn btn-primary shadow-sm"
-                    />
-                  </div>
-                </div>
-              </form>
-    
+            />
+          </div>
+        </div>
+        </form>
+  <div class="content">  
+    <div class ="row">
+      <div class ="col-7">
         <h1 id = "city">
             London
         </h1>
-        
-  <div class="content">   
-    <p>     
- Temperature
-    </p>
-
-<p id = "date-now">
-Date
-</p>
-
-  </br>
+        <div id ="current-temp"> Current Temperature
+        </div>
+        <div id = "date-now">
+        Date and Time
+        </div>
+      </div>
+    <div class ="col-5" id="weather-feature">
+       Humidity 
+       <br>
+       Wind Speed 
+    </div>
+  </div>
+</div>
     <img src="sun.jpeg" class="sun" id = "img1" > 17°
      <img src="sun.jpeg" class="sun" id = "img2"> 19°
      <img src="sun.jpeg" class="sun" id = "img3"> 18°

@@ -42,3 +42,7 @@ p {
   color: rgb(112, 117, 122);
   margin-right: auto;
 }
+
+.col-5 {
+  padding-top: 75px;
+}
