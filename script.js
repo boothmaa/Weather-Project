@@ -1,10 +1,14 @@
 function showtemp(search) {
   let temperature = search.data.main.temp;
-  console.log(search);
   let content = document.querySelector("#current-temp");
   content.innerHTML = `Current temperature is ${temperature}°C`;
   let description = document.querySelector("#Weather-description");
   description.innerHTML = search.data.weather[0].description;
+  console.log(search);
+  let humid = document.querySelector("#humidity");
+  humid.innerHTML = search.data.main.humidity;
+  let speed = document.querySelector("#wind-speed");
+  speed.innerHTML = search.data.wind.speed;
 }
 
 function search(event) {
