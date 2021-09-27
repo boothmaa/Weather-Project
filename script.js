@@ -9,6 +9,11 @@ function showtemp(search) {
   humid.innerHTML = search.data.main.humidity;
   let speed = document.querySelector("#wind-speed");
   speed.innerHTML = search.data.wind.speed;
+  let icons = document.querySelector("#icon");
+  icons.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${search.data.weather[0].icon}@2x.png`
+  );
 }
 
 function search(event) {
