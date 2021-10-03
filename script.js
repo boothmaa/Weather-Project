@@ -4,7 +4,7 @@ function showtemp(search) {
   content.innerHTML = `${temperature}`;
   let description = document.querySelector("#Weather-description");
   description.innerHTML = search.data.weather[0].description;
-  console.log(search);
+
   let humid = document.querySelector("#humidity");
   humid.innerHTML = search.data.main.humidity;
   let speed = document.querySelector("#wind-speed");
@@ -47,7 +47,9 @@ date.innerHTML = `${day} ${hour}:${minutes}`;
 
 function displayFtemp(event) {
   event.preventDefault();
-  let temperatureelement = document.querySelector;
+  let tempelement = document.querySelector("#number");
+  let ftemp = (tempelement.innerHTML * 9) / 5 + 32;
+  tempelement.innerHTML = Math.round(ftemp);
 }
 
 let conversion = document.querySelector("#Ftemp");
