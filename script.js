@@ -1,14 +1,16 @@
 function showtemp(search) {
   let temperature = search.data.main.temp;
   let content = document.querySelector("#number");
-  content.innerHTML = `${temperature}`;
+  content.innerHTML = Math.round(`${temperature}`);
   let description = document.querySelector("#Weather-description");
   description.innerHTML = search.data.weather[0].description;
-
   let humid = document.querySelector("#humidity");
   humid.innerHTML = search.data.main.humidity;
   let speed = document.querySelector("#wind-speed");
   speed.innerHTML = search.data.wind.speed;
+
+  celsiustemp = search.data.main.temp;
+
   let icons = document.querySelector("#icon");
   icons.setAttribute(
     "src",
@@ -48,9 +50,20 @@ date.innerHTML = `${day} ${hour}:${minutes}`;
 function displayFtemp(event) {
   event.preventDefault();
   let tempelement = document.querySelector("#number");
-  let ftemp = (tempelement.innerHTML * 9) / 5 + 32;
+  let ftemp = (celsiustemp * 9) / 5 + 32;
   tempelement.innerHTML = Math.round(ftemp);
 }
 
+function displayCtemp(event) {
+  event.preventDefault();
+  let tempelement = document.querySelector("#number");
+  tempelement.innerHTML = Math.round(celsiustemp);
+}
+
+let celsiustemp = null;
+
 let conversion = document.querySelector("#Ftemp");
 conversion.addEventListener("click", displayFtemp);
+
+let conversionback = document.querySelector("#Ctemp");
+conversionback.addEventListener("click", displayCtemp);
