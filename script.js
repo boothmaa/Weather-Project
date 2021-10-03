@@ -1,7 +1,7 @@
 function showtemp(search) {
   let temperature = search.data.main.temp;
-  let content = document.querySelector("#current-temp");
-  content.innerHTML = `Current temperature is ${temperature}°C`;
+  let content = document.querySelector("#number");
+  content.innerHTML = `${temperature}`;
   let description = document.querySelector("#Weather-description");
   description.innerHTML = search.data.weather[0].description;
   console.log(search);
@@ -44,3 +44,11 @@ if (minutes < 10) {
 }
 let date = document.querySelector("#date-now");
 date.innerHTML = `${day} ${hour}:${minutes}`;
+
+function displayFtemp(event) {
+  event.preventDefault();
+  let temperatureelement = document.querySelector;
+}
+
+let conversion = document.querySelector("#Ftemp");
+conversion.addEventListener("click", displayFtemp);
