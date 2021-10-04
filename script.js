@@ -49,6 +49,8 @@ date.innerHTML = `${day} ${hour}:${minutes}`;
 
 function displayFtemp(event) {
   event.preventDefault();
+  conversionback.classList.remove("active");
+  conversion.classList.add("active");
   let tempelement = document.querySelector("#number");
   let ftemp = (celsiustemp * 9) / 5 + 32;
   tempelement.innerHTML = Math.round(ftemp);
@@ -56,6 +58,8 @@ function displayFtemp(event) {
 
 function displayCtemp(event) {
   event.preventDefault();
+  conversion.classList.remove("active");
+  conversionback.classList.add("active");
   let tempelement = document.querySelector("#number");
   tempelement.innerHTML = Math.round(celsiustemp);
 }
